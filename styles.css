@@ -24,24 +24,28 @@ body {
 .logo {
   font-size: 20px;
   font-weight: 700;
-  color: #6c47ff;
+  color: #5818c0;
 }
 
 .nav-links {
   display: flex;
   gap: 28px;
+
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #555;
+  color: #000000;
   font-size: 14px;
+  font-weight: 600;
   transition: color 0.15s;
+  
 }
-
+/*
 .nav-links a:hover {
   color: #6c47ff;
 }
+*/
 
 .hero {
   max-width: 700px;
@@ -51,14 +55,14 @@ body {
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 16px;
   line-height: 1.2;
 }
 
 .hero p {
-  font-size: 18px;
+  font-size: 16px;
   color: #666;
   margin-bottom: 32px;
   line-height: 1.6;
@@ -75,10 +79,11 @@ body {
   transition: background 0.15s;
 }
 
+/*
 .btn:hover {
   background: #5533dd;
 }
-
+*/
 
 /* zbot widget */
 
@@ -102,8 +107,8 @@ body {
 }
 
 #cw-bubble-btn:hover {
-  transform: scale(1.08);
-  background: #2d3561;
+  transform: scale(1.02);
+  background: rgb(49, 50, 58);
 }
 
 #cw-bubble-btn svg {
@@ -159,7 +164,7 @@ body {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #332763, #a855f7);
+  background: linear-gradient(135deg, #3f3175, #6f2ee7);
   display: flex;
   align-items: center;
   justify-content: center;
