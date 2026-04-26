@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">MyBrand</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Welcome to My Website 👋</h1>
+    <p>Click the chat bubble at the bottom right — it runs fully on your PC, no internet needed!</p>
+    <button class="btn">Get Started</button>
+  </div>
+
+<!-- z-bot embed widget -->
+
+  <!-- floating bubble button -->
+  <button id="cw-bubble-btn" title="Chat with us">
+    <div id="cw-badge"></div>
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4 6a2 2 0 0 1 2-2h20a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H11l-7 4V6z" fill="#6c47ff"/>
+      <circle cx="10" cy="13" r="1.5" fill="white"/>
+      <circle cx="16" cy="13" r="1.5" fill="white"/>
+      <circle cx="22" cy="13" r="1.5" fill="white"/>
+    </svg>
+  </button>
+
+  <!-- chat panel -->
+  <div id="cw-panel">
+    <div id="cw-header">
+      <div class="cw-avatar">SVG</div>
+      <div class="cw-header-info">
+        <p class="cw-header-name" id="cw-bot-name">Site Assistant</p>
+        <p class="cw-header-status">
+          <span class="cw-dot" id="cw-status-dot"></span>
+          <span id="cw-status-text">Connecting...</span>
+        </p>
+      </div>
+      <button id="cw-close">✕</button>
+    </div>
+
+    <div id="cw-messages">
+      <div class="cw-msg bot" id="cw-welcome-msg">
+        👋 Hi! I'm here to help you navigate this site. What would you like to know?
+      </div>
+    </div>
+
+    <div id="cw-typing">
+      <span></span><span></span><span></span>
+    </div>
+
+    <div id="cw-quick-replies">
+      <button class="cw-qr" onclick="sendQuick('What can I do on this site?')">What can I do here?</button>
+      <button class="cw-qr" onclick="sendQuick('How do I get started?')">Get started</button>
+      <button class="cw-qr" onclick="sendQuick('How do I contact support?')">Contact support</button>
+    </div>
+
+    <div id="cw-input-row">
+      <input id="cw-input" type="text" placeholder="Ask me anything..." />
+      <button id="cw-send">
+        <svg viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
+      </button>
+    </div>
+
+    <div id="cw-powered">Requires Ollama installed and running locally. <br/> Setup instructions available in the GitHub README.</div>
+  </div>
+
+  <script src="src/config.js"></script>
+  <script src="src/app.js"></script>
+
+</body>
+</html>
