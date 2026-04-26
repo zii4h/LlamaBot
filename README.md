@@ -1,4 +1,4 @@
-## ZBot Web-Assistant Chatbot
+## LlamaBot Web-Assistant Chatbot
 a lightweight web chatbot that runs locally using Ollama models and can be dropped into any website with minimal setup 
 > PS: Includes a demo landing page for showcase 
 
